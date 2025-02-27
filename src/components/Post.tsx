@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import Image from './Image'
+import PostInfo from './post-info'
+import PostInteractions from './post-interactions'
 
 const Post = () => {
   return (
@@ -41,8 +43,10 @@ const Post = () => {
               <div className='flex flex-wrap items-center gap-2'>
                 <h1 className='text-md font-bold'>Lama Dev</h1>
                 <span className='text-textGray'>@lamaWebDev</span>
+                <span className='text-textGray'>1 day ago</span>
               </div>
             </Link>
+            <PostInfo />
           </div>
           {/* TEXT & MEDIA */}
           <Link href={`/lamaWebDev/status/123`}>
@@ -54,6 +58,7 @@ const Post = () => {
             </p>
           </Link>
           <Image path='general/post.jpeg' alt='' w={600} h={600} />
+          <PostInteractions />
         </div>
       </div>
     </div>
