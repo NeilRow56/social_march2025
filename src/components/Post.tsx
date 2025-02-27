@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from './Image'
 
 const Post = () => {
@@ -23,6 +24,36 @@ const Post = () => {
         {/* AVATAR */}
         <div className='relative h-10 w-10 overflow-hidden rounded-full'>
           <Image path='general/avatar.png' alt='' w={100} h={100} tr={true} />
+        </div>
+        <div className='flex flex-1 flex-col gap-2'>
+          {/* TOP */}
+          <div className='flex w-full justify-between'>
+            <Link href={`/lamaWebDev`} className='flex gap-4'>
+              <div className='} relative h-10 w-10 overflow-hidden rounded-full'>
+                <Image
+                  path='general/avatar.png'
+                  alt=''
+                  w={100}
+                  h={100}
+                  tr={true}
+                />
+              </div>
+              <div className='flex flex-wrap items-center gap-2'>
+                <h1 className='text-md font-bold'>Lama Dev</h1>
+                <span className='text-textGray'>@lamaWebDev</span>
+              </div>
+            </Link>
+          </div>
+          {/* TEXT & MEDIA */}
+          <Link href={`/lamaWebDev/status/123`}>
+            <p className=''>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+              animi. Laborum commodi aliquam alias molestias odio, ab in,
+              reprehenderit excepturi temporibus, ducimus necessitatibus fugiat
+              iure nam voluptas soluta pariatur inventore.
+            </p>
+          </Link>
+          <Image path='general/post.jpeg' alt='' w={600} h={600} />
         </div>
       </div>
     </div>
