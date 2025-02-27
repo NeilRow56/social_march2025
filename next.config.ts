@@ -19,6 +19,11 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'job_3_blob.vercel-storage.com',
         port: ''
+      },
+      {
+        protocol: 'https',
+        hostname: 'ik.imagekit.io',
+        port: ''
       }
     ]
   }
