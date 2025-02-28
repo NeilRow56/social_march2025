@@ -8,7 +8,12 @@ const UserPage = () => {
       {/* PROFILE TITLE */}
       <div className='sticky top-0 z-10 flex items-center gap-8 bg-[#00000084] p-4 backdrop-blur-md'>
         <Link href='/'>
-          <Image path='icons/back.svg' alt='back' w={24} h={24} />
+          <Image
+            path={`icons/back-arrow-svgrepo-com.svg`}
+            alt='back'
+            w={24}
+            h={24}
+          />
         </Link>
         <h1 className='text-lg font-bold'>Lama Dev</h1>
       </div>
