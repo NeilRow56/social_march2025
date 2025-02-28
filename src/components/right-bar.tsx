@@ -1,6 +1,23 @@
+import Link from 'next/link'
+import Search from './Search'
+import PopularTags from './popular-tags'
+import Recommendations from './Recomendations'
+
 const RightBar = () => {
   return (
-    <div className='sticky top-0 flex h-max flex-col gap-4 pt-4'>Right Bar</div>
+    <div className='sticky top-0 flex h-max flex-col gap-4 pt-4'>
+      <Search />
+      <PopularTags />
+      <Recommendations />
+      <div className='flex flex-wrap gap-x-4 text-sm text-textGray'>
+        <Link href='/'>Terms of Service</Link>
+        <Link href='/'>Privacy Policy</Link>
+        <Link href='/'>Cookie Policy</Link>
+        <Link href='/'>Accessibility</Link>
+        <Link href='/'>Ads Info</Link>
+        <span>© 2025 L Corp.</span>
+      </div>
+    </div>
   )
 }
 

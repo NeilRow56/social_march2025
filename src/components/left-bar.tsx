@@ -68,7 +68,7 @@ const LeftBar = () => {
   return (
     <div className='sticky top-0 flex h-screen flex-col justify-between pb-8 pt-2'>
       {/* LOGO MENU BUTTON */}
-      <div className='xxl:items-start flex flex-col items-center gap-4 text-lg'>
+      <div className='flex flex-col items-center gap-4 text-lg xxl:items-start'>
         {/* LOGO */}
         <Link href='/' className='rounded-full p-2 hover:bg-[#181818]'>
           <Image path='icons/logo.svg' alt='logo' w={24} h={24} />
@@ -87,20 +87,20 @@ const LeftBar = () => {
                 w={24}
                 h={24}
               />
-              <span className='xxl:inline hidden'>{item.name}</span>
+              <span className='hidden xxl:inline'>{item.name}</span>
             </Link>
           ))}
         </div>
         {/* BUTTON */}
         <Link
           href='/compose/post'
-          className='xxl:hidden flex h-12 w-12 items-center justify-center rounded-full bg-white text-black'
+          className='flex h-12 w-12 items-center justify-center rounded-full bg-white text-black xxl:hidden'
         >
           <Image path='icons/post.svg' alt='new post' w={24} h={24} />
         </Link>
         <Link
           href='/compose/post'
-          className='xxl:block hidden rounded-full bg-white px-20 py-2 font-bold text-black'
+          className='hidden rounded-full bg-white px-20 py-2 font-bold text-black xxl:block'
         >
           Post
         </Link>
@@ -117,12 +117,12 @@ const LeftBar = () => {
               tr={true}
             />
           </div>
-          <div className='xxl:flex hidden flex-col'>
+          <div className='hidden flex-col xxl:flex'>
             <span className='font-bold'>Lama Dev</span>
-            <span className='text-textGray text-sm'>@lamaWebDev</span>
+            <span className='text-sm text-textGray'>@lamaWebDev</span>
           </div>
         </div>
-        <div className='xxl:block hidden cursor-pointer font-bold'>...</div>
+        <div className='hidden cursor-pointer font-bold xxl:block'>...</div>
       </div>
     </div>
   )
