@@ -1,6 +1,7 @@
 import Feed from '@/components/Feed'
 import Image from '@/components/Image'
 import Link from 'next/link'
+import { TiArrowBackOutline } from 'react-icons/ti'
 
 const UserPage = () => {
   return (
@@ -8,12 +9,9 @@ const UserPage = () => {
       {/* PROFILE TITLE */}
       <div className='sticky top-0 z-10 flex items-center gap-8 bg-[#00000084] p-4 backdrop-blur-md'>
         <Link href='/'>
-          <Image
-            path={`icons/back-arrow-svgrepo-com.svg`}
-            alt='back'
-            w={24}
-            h={24}
-          />
+          <div>
+            <TiArrowBackOutline />
+          </div>
         </Link>
         <h1 className='text-lg font-bold'>Lama Dev</h1>
       </div>
@@ -32,13 +30,13 @@ const UserPage = () => {
         </div>
         <div className='flex w-full items-center justify-end gap-2 p-2'>
           <div className='flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border-[1px] border-gray-500'>
-            <Image path='icons/more.svg' alt='more' w={20} h={20} />
+            <Image path={`icons/explore.svg`} alt='back' w={24} h={24} />
           </div>
           <div className='flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border-[1px] border-gray-500'>
-            <Image path='icons/explore.svg' alt='more' w={20} h={20} />
+            <Image path={`icons/more.svg`} alt='back' w={24} h={24} />
           </div>
           <div className='flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border-[1px] border-gray-500'>
-            <Image path='icons/message.svg' alt='more' w={20} h={20} />
+            <Image path={`icons/message.svg`} alt='back' w={24} h={24} />
           </div>
           <button className='rounded-full bg-white px-4 py-2 font-bold text-black'>
             Follow
